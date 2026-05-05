@@ -1,0 +1,29 @@
+Crear la primera iteración del dashboard de métricas definido en el proyecto.
+Integrar la implementación dentro del proyecto frontend existente llamado 'dashboard'.
+Construir una única pantalla que represente la vista principal del dashboard.
+Dicha pantalla debe incluir:
+- Header con título y selector de rango de fecha.
+- Tarjetas de métricas principales.
+- Un gráfico de tendencia.
+- Una tabla de actividad reciente.
+- Estados de loading y vacío.
+Comportamiento:
+- Al cambiar el rango de fechas, los datos mockeados deben actualizarse.
+- Mantener lógica simple y clara.
+UI y librerías:
+- Utilizar material UI (MUI) para la construcción de la interfaz.
+- Usar componentes como Grid, Card, Typography, Table, etc.
+- No utilizar CSS nativo ni estilo manuales innecesarios.
+- Apoyarse en el sistema de estilos de MUI (sx o props).
+Estructura:
+- Organiza los componentes dentro del proyecto 'dashboard'.
+- Manten una estructura simple y clara (por ejemplo: components, pages, etc).
+- Crear componentes reutilizables cuando sea necesario.
+Enfocarce en:
+- Estructura de componentes clara.
+- Buena separación de responsabilidades.
+- UI limpia, ordenada y moderna.
+Restricciones:
+- No incluir autenticación.
+- No incluir multiples páginas.
+- No agregar funcionalidades fuera del alcance definido.
