@@ -1,0 +1,12 @@
+INSTALAR DRIVER WIFIsudo add-apt-repository restrictedsudo add-apt-repository multiversesudo apt update
+Verificar paquete exacto
+sudo apt-cache search broadcomsudo apt-cache search bcm
+CONFLICTOSlsmod | grep -E 'b43|bcma|ssb|wl'sudo modprobe -r b43 ssb bcma
+sudo apt install broadcom-sta-dkms -ysudo reboot
+
+INSTALAR BLUETHOOTInstalar dependencias necesariassudo apt install bluez-firmware b43-fwcutter -y
+Verificar nombre exacto de paquetes a instalarsudo dmesg | grep -i bluetooth
+Descargar paquetessudo wget https://raw.githubusercontent.com/winterheart/broadcom-bt-firmware/master/brcm/BCM43142A0-04ca-2006.hcd -P /lib/firmware/brcm/
+Recargar modulossudo modprobe -r btusb && sudo modprobe btusb
+Reiniciar bluethootsudo systemctl restart bluetooth
+Verificarbluetoothctl show
